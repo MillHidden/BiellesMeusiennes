@@ -10,7 +10,6 @@ return array(
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
-    'Carbon' => array($vendorDir . '/nesbot/carbon/src'),
     'Aura\\Intl' => array($vendorDir . '/aura/intl/src'),
     'Aura\\Composer\\' => array($vendorDir . '/aura/installer-default/src'),
 );

@@ -22,6 +22,7 @@ return array(
     'DebugKit\\' => array($vendorDir . '/cakephp/debug_kit/src'),
     'Cake\\Test\\' => array($vendorDir . '/cakephp/cakephp/tests'),
     'Cake\\Composer\\' => array($vendorDir . '/cakephp/plugin-installer/src'),
+    'Cake\\Chronos\\' => array($vendorDir . '/cakephp/chronos/src'),
     'Cake\\' => array($vendorDir . '/cakephp/cakephp/src'),
     'Bake\\' => array($vendorDir . '/cakephp/bake/src'),
     'Aura\\Intl\\_Config\\' => array($vendorDir . '/aura/intl/config'),

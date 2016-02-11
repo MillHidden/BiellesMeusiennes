@@ -8,9 +8,8 @@
     <?= $this->Html->css([
         'bootstrap.min',
         'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css',
-        'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-        'AdminLTE.min',
-        '_all-skins.min'
+        'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',             
+        'inscription'
         ]) ?>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,11 +19,15 @@
         <![endif]-->
 </head>
 <body class="hold-transition skin-blue layout-top-nav">
-    <?= $this->element('topbar');?>
-    <div class="content-wrapper" style="background-color:#212121;">
-        <?= $this->Flash->render() ?>
-        <?= $this->fetch('content') ?>
+    <?= $this->element('header');?>    
+    <div class="content-wrapper container">
+        <div class="row">
+            <?= $this->element('navbar');?>
+            <?= $this->Flash->render() ?>
+            <?= $this->fetch('content') ?>
+        </div>
     </div>
+     <?= $this->element('footer');?>    
     <?= $this->Html->script([
         'jQuery-2.1.4.min',
         'bootstrap.min',

@@ -19,6 +19,7 @@ use Cake\Collection\Collection;
 use Cake\Database\Expression\TupleComparison;
 use Cake\Database\Type;
 use Cake\Datasource\EntityInterface;
+use Cake\Datasource\InvalidPropertyInterface;
 use RuntimeException;
 
 /**
@@ -128,6 +129,9 @@ class Marshaller
         $properties = [];
         foreach ($data as $key => $value) {
             if (!empty($errors[$key])) {
+                if ($entity instanceof InvalidPropertyInterface) {
+                    $entity->invalid($key, $value);
+                }
                 continue;
             }
             $columnType = $schema->columnType($key);
@@ -281,7 +285,7 @@ class Marshaller
      * Builds the related entities and handles the special casing
      * for junction table entities.
      *
-     * @param Association $assoc The association to marshal.
+     * @param \Cake\ORM\Association $assoc The association to marshal.
      * @param array $data The data to convert into entities.
      * @param array $options List of options.
      * @return array An array of built entities.
@@ -318,9 +322,7 @@ class Marshaller
             $query->andWhere(function ($exp) use ($conditions) {
                 return $exp->or_($conditions);
             });
-        }
 
-        if (isset($query)) {
             $keyFields = array_keys($primaryKey);
 
             $existing = [];
@@ -337,8 +339,10 @@ class Marshaller
                     }
                 }
                 $key = implode(';', $key);
+
+                // Update existing record and child associations
                 if (isset($existing[$key])) {
-                    $records[$i] = $existing[$key];
+                    $records[$i] = $this->merge($existing[$key], $data[$i], $options);
                 }
             }
         }
@@ -351,6 +355,7 @@ class Marshaller
         }
 
         foreach ($records as $i => $record) {
+            // Update junction table data in _joinData.
             if (isset($data[$i]['_joinData'])) {
                 $joinData = $jointMarshaller->one($data[$i]['_joinData'], $nested);
                 $record->set('_joinData', $joinData);
@@ -362,7 +367,7 @@ class Marshaller
     /**
      * Loads a list of belongs to many from ids.
      *
-     * @param Association $assoc The association class for the belongsToMany association.
+     * @param \Cake\ORM\Association $assoc The association class for the belongsToMany association.
      * @param array $ids The list of ids to load.
      * @return array An array of entities.
      */
@@ -394,7 +399,7 @@ class Marshaller
     /**
      * Loads a list of belongs to many from ids.
      *
-     * @param Association $assoc The association class for the belongsToMany association.
+     * @param \Cake\ORM\Association $assoc The association class for the belongsToMany association.
      * @param array $ids The list of ids to load.
      * @return array An array of entities.
      * @deprecated Use _loadAssociatedByIds()
@@ -463,6 +468,9 @@ class Marshaller
         $properties = $marshalledAssocs = [];
         foreach ($data as $key => $value) {
             if (!empty($errors[$key])) {
+                if ($entity instanceof InvalidPropertyInterface) {
+                    $entity->invalid($key, $value);
+                }
                 continue;
             }
 

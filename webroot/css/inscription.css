@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-light-webfont.eot');
+    src: url('../fonts/OpenSans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-light-webfont.svg#open_sansregular') format('svg');
+ }
+ @font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-bold-webfont.eot');
+    src: url('../fonts/OpenSans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-bold-webfont.svg#open_sansregular') format('svg');    
+}
+
+body {
+	background-color: #5A5A61;
+}
+
+.subnavigation-colors {
+	background-color: #212121;
+	opacity: 0.9;
+
+	height: 25px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.content-wrapper {
+	background-color: #FFF;
+
+	padding: 0 0 20px;
+	max-width: 960px;
+}
+
+.inscription__banniere__container {
+	text-align: center;
+	padding: 50px 0 20px;
+}
+
+.inscription__banniere-style {
+	margin: 0 auto;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;  
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.inscription__navbar-nav li a{
+	background-color: #200F4E;
+	color: #EEEEEE;
+	
+	font-family: "Open Sans Bold",sans-serif,"google";
+	font-weight: bold;	
+	font-size: 19px;
+}
+
+.inscription__navbar-nav li:hover a{
+	background-color: #A1C4C9;
+	color: #351783;
+	transition: background-color 1s;
+	
+}
+
+.navbar .active a{
+	background-color: #A1C4C9;
+	color: #351783;
+}
+
+
+footer {
+    background-color: #212121;
+    margin-top: 60px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.links {
+    max-width: 960px;
+}
+
+footer, footer a {
+    color: #BBB;
+    transition: color 1s;
+    text-decoration : none;
+}
+
+footer a:hover {
+    color: #505050;
+    transition: color 1s;
+    text-decoration: underline;
+}
+
+hr {
+    height: 1px;
+}
+
+.links1 {
+    padding-top: 40px;
+}
+.images {
+   
+    padding-bottom: 40px;
+}
+    
+    .images p {
+        height: 100px;
+        line-height: 100px;
+    }
+    
+    .images img {
+        vertical-align : middle;
+    }
+
+.links2 {
+    padding-bottom: 40px;
+}
+
+

@@ -5464,3 +5464,721 @@ Stack Trace:
 #2 {main}
 
 
+2016-02-08 21:10:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-08 21:10:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/admin
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-08 21:10:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/admin/dashboard
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-08 21:11:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/admin/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-08 21:12:23 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'bielles'
+Request URL: /BiellesMeusiennes/admin/events
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\EventsTable))
+#10 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\EventsTable))
+#11 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#13 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EventsTable), Array)
+#14 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\Admin\EventsController.php(58): Cake\Controller\Controller->paginate(Object(App\Model\Table\EventsTable))
+#15 [internal function]: App\Controller\Admin\EventsController->index()
+#16 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\EventsController))
+#19 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-02-08 22:19:17 Error: [PDOException] SQLSTATE[HY000] [1049] Unknown database 'bielles'
+Request URL: /BiellesMeusiennes/admin/events
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(90): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(43): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(422): Cake\Database\Connection->schemaCollection()
+#8 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#9 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\EventsTable))
+#10 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\EventsTable))
+#11 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#12 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#13 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\EventsTable), Array)
+#14 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\Admin\EventsController.php(58): Cake\Controller\Controller->paginate(Object(App\Model\Table\EventsTable))
+#15 [internal function]: App\Controller\Admin\EventsController->index()
+#16 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\Admin\EventsController))
+#19 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-02-09 19:34:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:35:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:35:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/Events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:35:26 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/Events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-09 19:35:41 Error: [Cake\Controller\Exception\MissingActionException] Action EventsController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EventsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /BiellesMeusiennes/Events/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#2 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-02-09 19:35:48 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/Events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-09 19:40:26 Error: [Cake\Controller\Exception\MissingActionException] Action EventsController::inscription.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EventsController',
+  'action' => 'inscription.ctp',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /BiellesMeusiennes/Events/inscription.ctp
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#2 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-02-09 19:40:47 Error: [Cake\Controller\Exception\MissingActionException] Action EventsController::inscription.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'EventsController',
+  'action' => 'inscription.ctp',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /BiellesMeusiennes/events/inscription.ctp
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#2 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-02-09 19:40:51 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-09 19:41:18 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('1')
+#2 [internal function]: App\Controller\EventsController->inscription('1')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-09 19:46:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/img/
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:47:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/img/
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:48:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/img/
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:48:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/img/
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 19:51:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/img/
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-09 20:02:41 Error: [Cake\View\Exception\MissingElementException] Element\header.ctp
+Request URL: /BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Template\Layout\default.ctp(23): Cake\View\View->element('header')
+#1 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\View\View.php(992): include('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\View\View.php(952): Cake\View\View->_evaluate('E:\\xampp\\htdocs...', Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\View\View.php(633): Cake\View\View->_render('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->renderLayout('', 'default')
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(612): Cake\View\View->render(NULL, NULL)
+#6 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#7 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#8 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2016-02-09 20:41:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/banniere_BiellesMeusiennes.png
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('banniere_Bielle...')
+#2 [internal function]: App\Controller\EventsController->inscription('banniere_Bielle...')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-09 21:21:53 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/events/inscription/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-09 22:12:55 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/events/inscription/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-09 22:44:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index2.html could not be found.
+Exception Attributes: array (
+  'class' => 'Index2.html',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/index2.html
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 21:55:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 21:55:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 21:55:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/events/inscription
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 21:55:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Biellesmeusiennes could not be found.
+Exception Attributes: array (
+  'class' => 'Biellesmeusiennes',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/biellesmeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 21:55:46 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "events" with primary key [NULL]
+Request URL: /BiellesMeusiennes/events/inscription/
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get(NULL)
+#1 [internal function]: App\Controller\EventsController->inscription()
+#2 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#5 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-11 21:58:59 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/lorraine.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'lorraine.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/ffve.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'ffve.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/meuse.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'meuse.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:01 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/cora.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'cora.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:02 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/madine.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'madine.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:02 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/creditmutuel.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'creditmutuel.jp...')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:03 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/allianz.jpg
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'allianz.jpg')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 21:59:04 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "events"
+Request URL: /BiellesMeusiennes/events/inscription/img/nostalgie.png
+Referer URL: http://localhost/BiellesMeusiennes/events/inscription/1
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\ORM\Table.php(1191): Cake\ORM\Query->firstOrFail()
+#1 E:\xampp\htdocs\BiellesMeusiennes\src\Controller\EventsController.php(18): Cake\ORM\Table->get('img')
+#2 [internal function]: App\Controller\EventsController->inscription('img', 'nostalgie.png')
+#3 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#4 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 E:\xampp\htdocs\BiellesMeusiennes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\EventsController))
+#6 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-02-11 22:19:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/OpenSans-Regular-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:20:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/OpenSans-Regular-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:20:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/OpenSans-Regular-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:20:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/OpenSans-Regular-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:21:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-Regular-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:21:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-Regular-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:21:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-Regular-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:21:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-Regular-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:22:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-light-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:23:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-light-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:24:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-light-webfont.woff
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-11 22:24:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /BiellesMeusiennes/css/fonts/OpenSans-light-webfont.ttf
+Referer URL: http://localhost/BiellesMeusiennes/css/inscription.css
+Stack Trace:
+#0 E:\xampp\htdocs\BiellesMeusiennes\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

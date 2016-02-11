@@ -317,7 +317,7 @@ class FormHelper extends Helper
      * - `type` Form method defaults to autodetecting based on the form context. If
      *   the form context's isCreate() method returns false, a PUT request will be done.
      * - `action` The controller action the form submits to, (optional). Use this option if you
-     *   don't need to change the controller from the current request's controller.
+     *   don't need to change the controller from the current request's controller. Deprecated since 3.2, use `url`.
      * - `url` The URL the form submits to. Can be a string or a URL array. If you use 'url'
      *    you should leave 'action' undefined.
      * - `encoding` Set the accept-charset encoding for the form. Defaults to `Configure::read('App.encoding')`
@@ -356,6 +356,10 @@ class FormHelper extends Helper
             'templates' => null,
             'idPrefix' => null,
         ];
+
+        if (isset($options['action'])) {
+            trigger_error('Using key `action` is deprecated, use `url` directly instead.', E_USER_DEPRECATED);
+        }
 
         if ($options['idPrefix'] !== null) {
             $this->_idPrefix = $options['idPrefix'];
@@ -579,7 +583,7 @@ class FormHelper extends Helper
      * it from the list of fields.
      *
      * @param string|null $name The dot separated name for the field.
-     * @return mixed Either null, or the list of fields.
+     * @return array|null Either null, or the list of fields.
      * @link http://book.cakephp.org/3.0/en/views/helpers/form.html#working-with-securitycomponent
      */
     public function unlockField($name = null)
@@ -1608,8 +1612,12 @@ class FormHelper extends Helper
      * Creates an HTML link, but access the URL using the method you specify
      * (defaults to POST). Requires javascript to be enabled in browser.
      *
-     * This method creates a `<form>` element. So do not use this method inside an
-     * existing form. Instead you should add a submit button using FormHelper::submit()
+     * This method creates a `<form>` element. If you want to use this method inside of an
+     * existing form, you must use the `block` option so that the new form is being set to
+     * a view block that can be rendered outside of the main form.
+     *
+     * If all you are looking for is a button to submit your form, then you should use
+     * `FormHelper::button()` or `FormHelper::submit()` instead.
      *
      * ### Options:
      *

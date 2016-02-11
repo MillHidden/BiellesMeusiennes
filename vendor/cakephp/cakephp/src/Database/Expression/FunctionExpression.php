@@ -15,6 +15,8 @@
 namespace Cake\Database\Expression;
 
 use Cake\Database\ExpressionInterface;
+use Cake\Database\TypedResultInterface;
+use Cake\Database\TypedResultTrait;
 use Cake\Database\ValueBinder;
 
 /**
@@ -25,8 +27,10 @@ use Cake\Database\ValueBinder;
  *
  * @internal
  */
-class FunctionExpression extends QueryExpression
+class FunctionExpression extends QueryExpression implements TypedResultInterface
 {
+
+    use TypedResultTrait;
 
     /**
      * The name of the function to be constructed when generating the SQL string
@@ -45,23 +49,25 @@ class FunctionExpression extends QueryExpression
      *
      * ### Examples:
      *
-     *  ``$f = new FunctionExpression('CONCAT', ['CakePHP', ' rules']);``
+     *  `$f = new FunctionExpression('CONCAT', ['CakePHP', ' rules']);`
      *
-     * Previous line will generate ``CONCAT('CakePHP', ' rules')``
+     * Previous line will generate `CONCAT('CakePHP', ' rules')`
      *
-     * ``$f = new FunctionExpression('CONCAT', ['name' => 'literal', ' rules']);``
+     * `$f = new FunctionExpression('CONCAT', ['name' => 'literal', ' rules']);`
      *
-     * Will produce ``CONCAT(name, ' rules')``
+     * Will produce `CONCAT(name, ' rules')`
      *
      * @param string $name the name of the function to be constructed
      * @param array $params list of arguments to be passed to the function
      * If associative the key would be used as argument when value is 'literal'
      * @param array $types associative array of types to be associated with the
      * passed arguments
+     * @param string $returnType The return type of this expression
      */
-    public function __construct($name, $params = [], $types = [])
+    public function __construct($name, $params = [], $types = [], $returnType = 'string')
     {
         $this->_name = $name;
+        $this->_returnType = $returnType;
         parent::__construct($params, $types, ',');
     }
 
